@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    display: block;
+}
+
+
+body {
+    background-color: #F2DCC9;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: MonicaGarden;
+    src: url("./fonts/MonicaGarden-G3OGD.ttf");
+}
+
+
+
+img {
+    width: 50%;
+    border-radius: 5px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    max-width: 38rem;
+    float: right;
+    margin: 2.5rem 0 2rem 1.5rem;
+}
+
+
+
+h1 {
+    font-family: MonicaGarden;
+    font-size: 6rem;
+    font-weight: normal;
+    color: #f2dcc9;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+h2 {
+   color: #638f87;
+   font-variant: small-caps;
+   font-size: 3rem;
+   margin: 0;
+}
+
+
+p {
+    max-width: 35rem;
+    font-family: belgiano;
+    font-size: 1.1rem;
+}
+
+#header {
+    background-color: #607fb8;
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+#content {
+    padding-top: 2.5rem;
+    margin: 0 auto;
+    width: 80%;
+}
+
+#nav {
+    text-align: end;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    a {
+        display: block;
+    }
+}
+
+#nav li {
+    display: inline-block;
+    margin: 0;
+
+    a {
+        text-decoration: none;
+        color: black;
+        padding: .8rem;
+        background-color: #e49a4f;
+        color: #F2DCC9;
+        font-family: MonicaGarden;
+        font-size: 2em;
+        font-weight: normal;
+    }
+
+    a:hover {
+        background-color: #d66d31;
+
+    }
+}
+
+#nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+/* ul inside li is hidden */
+#nav li ul {
+    display: none;
+    position: absolute;
+    padding: 0;
+    margin: .8em 0 0 0;
+
+    a {
+        display: block;
+        text-decoration: none;
+    }
+}
+
+#nav ul li a {
+    white-space: nowrap;
+}
+
+#nav li:hover>ul {
+    display: block;
+    position: absolute;
+}
+
+#nav li ul li {
+    display: block;
+    margin: 0;
+    border-top: #ece6df solid 1px;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Projects</title>
+    <link rel="stylesheet" href="portfolio.css" />
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container_top">
+            <img id="pixelHeart" src="./images/pixelHeart.png" />
+            <br style="clear:both" />
+            <span id="display-time">
+                <script>
+                    function getTime() {
+                        var currentTime = new Date();
+                        hour = currentTime.getHours();
+                        min = currentTime.getMinutes();
+                        sec = currentTime.getSeconds();
+                        time = "TIME " + hour + " " + min + " " + sec;
+                        document.querySelector('#display-time').textContent = time;
+                    }
+                    setInterval(getTime, 1000);
+                </script>
+            </span>
+        </div>
+
+        <h1 id="name">Madeleine Moeller</h1>
+
+        <div class="nav">
+
+            <ul>
+                <li><a href="./index.html"><span id="selector">> </span><span id="selContent">About</span></a></li>
+                <li><a href="./projects.html" id="currentPage"><span id="selector">> </span><span
+                            id="selContent">Projects</span></a>
+                </li>
+                <li><a href="./resume.html"><span id="selector">> </span><span id="selContent">Resume</span></a></li>
+                <li><a href="./gallery.html"><span id="selector">> </span><span id="selContent">Gallery</span></a></li>
+                <li><a href="./contact.html"><span id="selector">> </span><span id="selContent">Contact</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="wrapper">
+
+        <div id="projectContent">
+            <div id="project1">
+
+                <img src="./images/scivis.jpg" />
+                <h3>2023 SciVis Contest</h3>
+                <p>Developed <a href="https://tmarrinan.github.io/SciVis23/">VisAnywhere</a>, a multiplatform scientific
+                    visualization application for
+                    analyzing
+                    data from brain
+                    plasticity simulations with Dr. Thomas Marrinan and other researchers from Argonne National
+                    Laboratory,
+                    and University of Illinois Chicago for the IEEE 2023 Scivis Contest, winning first place and best
+                    workflow. </p>
+                <div style="clear:both"></div>
+            </div>
+
+
+
+
+            <div id="project2">
+                <img src="./images/wearablesposter.jpg" />
+                <h3>Driver Monitoring System</h3>
+                <p>The goal of the proposed system was to monitor and identify inattentiveness and drowsiness in drivers
+                    by
+                    way of electromyography (EMG) to monitor eye blink rate, electroencephalography (EEG) to monitor
+                    brain
+                    activity, and electrocardiography (ECG) signals to monitor heart rate. Through this research it was
+                    determined that single-channel EEG from the channel F7 electrode, placed near the temple above the
+                    frontal lobe, was a suitable and convenient location for determining drowsiness and alertness in
+                    drivers, producing an average accuracy of 67.378%. From the observed data it was possible to locate
+                    and
+                    identify decernable patterns indicative of drowsy and alert states in the F7 channel. These results
+                    furthered the goal of creating an accessible, non-invasive, compact system able to automatically
+                    detect
+                    distracted and drowsy driving to act as a warning system, alerting users of inattentive and
+                    dangerous
+                    behavior.</p>
+                    <div style="clear:both"></div>
+            </div>
+
+            <div id="project3">
+                <img src="./images/postureposter.jpg" />
+                <h3>Wearable Posture Monitoring System</h3>
+                <p>The goal of the proposed system was to automatically track a user's postural positions throughout the
+                    day
+                    through the use of a non-invasive, wearable system and automatically provide feedback to change
+                    their
+                    posture. This was done by placing magnets in the form of a rectangular grid on a shirt as well as an
+                    MMR
+                    sensor on the chest of the body. The onboard magnetic sensor records the data values from the grid
+                    of
+                    magnetics, which is then, along with data recorded from the onboard accelerometer, analyzed to
+                    determine
+                    the position of the user. A trained algorithm recognizes and automatically detects the spinal
+                    position
+                    of the user from the recorded data points and provides direction to alter posture. These
+                    recommendations
+                    act as a warning system and allow the user to self-monitor to prevent back and neck pain and reduce
+                    the
+                    chance of long-lasting damage that can result from poor posture.</p>
+                    <div style="clear:both"></div>
+            </div>
+        </div>
+        <div style="clear:both"></div>
+    </div>
+
+    <div id="footer">
+        <footer>Moeller 2024</footer>
+    </div>
+</body>
+
+</html>

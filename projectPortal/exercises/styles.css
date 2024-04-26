@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background-color: #e0e5e9; */
+    /* Inspiration found: https://css-tricks.com/grainy-gradients/ */
+    background-image: linear-gradient(#2E40A6dd 5%, transparent), url("./images/noise.svg");
+    background-attachment: fixed;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #1f2e46;
+    font-weight: bolder;
+    border: 25px solid;
+    /* border: 5px solid  #1f2e46; */
+    border-radius: 50px;
+
+    border-style: double;
+
+    animation-name: border;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    color: linear-gradient(to right, #2E40A6dd 20%, #F22D1Bdd 33%, #F2BF27aa 50%, #F22D1Bdd 66%, #2E40A6dd 80%) border-box;
+
+
+}
+
+
+
+@keyframes border {
+    0% {
+        border-color: #F22D1Baa;
+    }
+
+    25% {
+        border-color: #2E40A6dd;
+    }
+
+    50% {
+        border-color: #F2BF27aa;
+    }
+
+    75% {
+        border-color: #2E40A6dd;
+    }
+
+    100% {
+        border-color: #F22D1Baa;
+    }
+
+    /* 0% {
+        border-color: #8babdf;
+    }
+
+    25% {
+        border-color: #1f2e46;
+    }
+
+    50% {
+        border-color: #7a710c;
+    }
+
+    75% {
+        border-color: #1f2e46;
+    }
+
+    100% {
+        border-color: #8babdf;
+    } */
+
+}
+
+
+a {
+    color: #2d4040;
+}
+
+a:visited {
+    color: #455f5f
+}
+
+a:hover {
+    color: #7a710c;
+}
+
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+    font-size: 10vmax;
+    text-shadow: .3rem .3rem #1e1e3e;
+    /* #7a710c; */
+    color: transparent;
+    background-clip: text;
+    animation-name: background;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* text-transform: uppercase; */
+    text-align: left;
+    margin: 1rem 0 0 0;
+}
+
+@keyframes background {
+    from {
+        background-image: conic-gradient(#8694A6, #553c9a, #2E40A6, #F22D1B, #8694A6);
+    }
+
+    to {
+        background-image: conic-gradient(#3787a9, #F2BF27, #F26A1B, #2d4040, #3787a9);
+    }
+}
+
+h2 {
+    font-size: 8vmin;
+    font-variant: small-caps;
+    margin: auto
+}
+
+
+#nav_bar a {
+    background-color: #1f2e46;
+    color: #e0e5e9;
+
+}
+
+
+#nav_bar a:hover {
+    background-color: #2d4040;
+}
+
+
+#nav_bar {
+    text-align: right;
+}
+
+#nav_bar li {
+    list-style-type: none;
+    display: inline-flex;
+
+}
+
+#nav_bar li a {
+    padding: 0.5em;
+    text-decoration: none;
+    border-radius: 5em;
+    margin: 0.15em;
+
+
+}
+
+img {
+    border-radius: 25px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+p {
+    display: block;
+}
+
+
+#wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.section {
+    padding: 1rem;
+    border: solid 8px transparent;
+    background: linear-gradient(#e0e5e9, #e0e5e9) padding-box,
+        linear-gradient(to right, #2E40A6dd 20%, #F22D1Bdd 33%, #F2BF27aa 50%, #F22D1Bdd 66%, #2E40A6dd 80%) border-box;
+
+    border-radius: 30px;
+    text-align: left;
+
+    margin-top: 2rem;
+    overflow: hidden;
+}
+
+figcaption {
+    font-variant: small-caps;
+    font-size: small;
+    padding: 0 1rem 0 1rem;
+    display: table-caption;
+    caption-side: bottom;
+
+
+}
+
+#ninlogo {
+    max-width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    opacity: .7;
+}
+
+#footer {
+    margin: 2rem;
+    font-size: small;
+}
+
+h3 {
+    margin: auto;
+}
+
+figure {
+    /* float: right; */
+    display: table;
+    float: right;
+    margin: 3rem;
+
+}
+
+

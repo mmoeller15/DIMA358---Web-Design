@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    display: block;
+}
+
+
+body {
+    background-color: #ece6df;
+    margin: 0 auto;
+}
+
+/* @font-face {
+    font-family: MonicaGarden;
+    src: url("./fonts/MonicaGarden-G3OGD.ttf");
+} */
+
+img {
+    width: 50%;
+    border-radius: 5px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    max-width: 38rem;
+    float: right;
+    margin: 2.5rem 0 2rem 1.5rem;
+}
+
+@font-face {
+    font-family: MiddleEarth;
+    src: url("./fonts/Bright\ DEMO.otf");
+}
+
+@font-face {
+    font-family: hobbit;
+    src: url("./fonts/hobbitonbrushhand.ttf");
+}
+
+@font-face {
+    font-family: belgiano;
+    src: url("./fonts/Belgiano\ Serif\ 2.ttf");
+}
+
+@font-face {
+    font-family: monica;
+    src: url("./fonts/MonicaGarden-G3OGD.ttf")
+}
+
+h1,
+#nav,
+#content,
+#mobilenav {
+    width: 80%;
+    transition: all 400ms;
+}
+
+
+
+h1 {
+    font-family: hobbit;
+    font-size: 6rem;
+    font-weight: normal;
+    color: #36201c;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: monica;
+    font-weight: normal;
+    font-size: 4rem;
+    margin: 0;
+}
+
+
+
+p {
+    max-width: 35rem;
+    font-family: belgiano;
+    font-size: 1.1rem;
+}
+
+#header {
+    background-color: #5e6349;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#content {
+    padding-top: 2.5rem;
+    margin: 0 auto;
+    width: 80%;
+}
+
+#nav {
+    text-align: end;
+    margin: 0 auto;
+}
+
+#nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    a {
+        display: block;
+    }
+}
+
+#nav li {
+    display: inline-block;
+    margin: 0;
+
+    a {
+        text-decoration: none;
+        color: black;
+        padding: .8rem;
+        background-color: #997032;
+        color: #ece6df;
+        font-family: MiddleEarth;
+        font-size: 2em;
+        font-weight: normal;
+    }
+
+    a:hover {
+        color: #997032;
+        background-color: #252d2c;
+
+    }
+}
+
+#nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+/* ul inside li is hidden */
+#nav li ul {
+    display: none;
+    position: absolute;
+    padding: 0;
+    margin: .5em 0 0 0;
+
+    a {
+        display: block;
+        text-decoration: none;
+    }
+}
+
+#nav ul li a {
+    white-space: nowrap;
+}
+
+#nav li:hover>ul {
+    display: block;
+    position: absolute;
+}
+
+#nav li ul li {
+    display: block;
+    margin: 0;
+    border-top: #ece6df solid 1px;
+}
+
+#menu-toggle,
+#mobilenav {
+    width: 100%;
+    margin: 0 auto;
+    display: none;
+    text-align: right;
+    font-size: 2rem;
+}
+
+#mobilenav{
+    color: #36201c;
+    width: 90%;
+}
+
+@media screen and (max-width:952px) {
+
+    h1,
+    #nav,
+    #content {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+
+
+
+@media screen and (max-width:700px) {
+
+    #nav {
+        display: none;
+        padding: 0;
+    }
+
+    #mobilenav {
+        cursor: pointer;
+        display: block;
+    }
+
+    #mobilenav:hover {
+        color: #ece6df;
+    }
+
+    #menu-toggle:checked+#nav {
+        display: block;
+        position: static;
+        text-align: center;
+    }
+
+    #nav {
+        width: 100%;
+    }
+
+    #nav li {
+        display: block;
+        margin: 0;
+    }
+
+    #nav li a {
+        width: 100%;
+        display: block;
+    }
+
+    #nav li ul {
+        width: 100%;
+        display: block;
+        position: static;
+        font-weight: 300;
+    }
+
+    #nav li ul li a {
+        width: 100%;
+        text-align: center;
+    }
+}

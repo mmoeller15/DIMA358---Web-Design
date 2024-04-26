@@ -1,0 +1,104 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* top right bottom left */
+    margin: 0 auto;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #926b23;
+    background-image: url('./images/monstera.jpg');
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    font-size: large;
+}
+
+
+h1 {
+    width: 80%;
+    text-decoration: overline;
+    margin: 0 auto;
+    padding-top: 1rem;
+    font-variant: small-caps;
+    font-size: 4rem;
+    
+}
+
+.sub_header {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.header {
+    text-align: center;
+    padding: 1em;
+    background-color: #525e6a;
+    margin-top: 0;
+
+}
+
+a {
+    color: #141f15;
+}
+
+a:visited {
+    color: #2d4040
+}
+
+a:hover {
+    color: #926c23;
+}
+
+
+li {
+    margin: 1rem;
+    font-size: large;
+}
+
+
+.img_floatRight {
+    width: 33.3%;
+    float: right;
+    max-width: 100%;
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+
+
+.list {
+    ul {
+        color: #2d4040
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+#header {
+    background-color: #3e4019;
+    padding: 1em;
+    padding: 1rem 1rem 1px 1rem;
+    margin: 0 auto;
+}
+
+
+#content {
+    margin-top: 4rem;
+    background-color: #ecececaa;
+    padding: 2rem 4rem 2rem 4rem;
+    color: #141f15;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+

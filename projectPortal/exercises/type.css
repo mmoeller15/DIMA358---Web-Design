@@ -1,0 +1,90 @@
+body {
+    background-color:antiquewhite;
+}
+
+@font-face {
+    font-family: "1942";
+    src: url(./fonts/1942.ttf);
+}
+
+@font-face {
+    font-family: "alagard";
+    src: url(./fonts/alagard.ttf);
+}
+
+@font-face {
+    font-family: "dearest";
+    src: url(./fonts/Dearest.ttf);
+}
+
+@font-face {
+    font-family: "sevesbrg";
+    src: url(./fonts/SEVESBRG.TTF);
+}
+
+@font-face {
+    font-family: "deadspace";
+    src: url(./fonts/Dead\ Space.ttf);
+}
+
+.font1 {
+    font-family: "deadspace";
+    line-height: 4rem;
+}
+
+.font2 {
+    font-family: "alagard";
+    text-align: center;
+}
+
+.font3 {
+    font-family: "dearest";
+    letter-spacing: .6rem;
+}
+
+.font4 {
+    font-family: "sevesbrg";
+    text-shadow: .2rem .2rem lightslategray;
+}
+
+.font5 {
+    font-family: "1942";
+    letter-spacing: 1rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+#content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#header {
+    margin: 0 auto;
+    background-color:rgba(125, 136, 194, 0.635);
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+#header-content {
+    width: 85%;
+    margin: 0 auto;
+}
+
+a {
+    background-color: rgba(19, 17, 145, 0.594);
+    padding: .5rem;
+    border-radius: 15px;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+a:hover {
+    background-color: rgba(4, 13, 36, 0.594);
+}

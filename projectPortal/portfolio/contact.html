@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <script src="https://kit.fontawesome.com/1cb83f2b6e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container_top">
+            <img id="pixelHeart" src="./images/pixelHeart.png" />
+            <br style="clear:both" />
+            <span id="display-time">
+                <script>
+                    function getTime() {
+                        var currentTime = new Date();
+                        hour = currentTime.getHours();
+                        min = currentTime.getMinutes();
+                        sec = currentTime.getSeconds();
+                        time = "TIME " + hour + " " + min + " " + sec;
+                        document.querySelector('#display-time').textContent = time;
+                    }
+                    setInterval(getTime, 1000);
+                </script>
+            </span>
+        </div>
+
+        <h1 id="name">Madeleine Moeller</h1>
+
+        <div class="nav">
+
+            <ul>
+                <li><a href="./index.html"><span id="selector">> </span><span id="selContent">About</span></a></li>
+                <li><a href="./projects.html"><span id="selector">> </span><span id="selContent">Projects</span></a>
+                </li>
+                <li><a href="./resume.html"><span id="selector">> </span><span id="selContent">Resume</span></a></li>
+                <li><a href="./gallery.html"><span id="selector">> </span><span id="selContent">Gallery</span></a></li>
+                <li><a href="./contact.html" id="currentPage"><span id="selector">> </span><span
+                            id="selContent">Contact</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="contactContent">
+        <h2>Contact Me!</h2>
+
+        <ul>
+            <li>
+                <div id="email">
+                    
+                    <a href="mailto: maddiemoeller15@gmail.com"><i class="fa-solid fa-envelope"></i>maddiemoeller15@gmail.com</a>
+                </div>
+            </li>
+
+            <li>
+                <div id="linkedin">
+                    
+                    <a href="https://www.linkedin.com/in/moeller-madeleine/" target="_blank"><i class="fa-brands fa-linkedin"></i>@moeller-madeleine</a>
+                </div>
+            </li>
+
+            <li>
+                <div id="github">
+                    
+                    <a href="https://github.com/mmoeller15" target="_blank"><i class="fa-brands fa-github"></i></i>mmoeller15</a>
+                </div>
+            </li>
+
+        </ul>
+
+
+        <div style="clear:both"></div>
+    </div>
+
+    <div id="footer">
+        <footer>Moeller 2024</footer>
+    </div>
+</body>
+
+
+</body>
+
+</html>

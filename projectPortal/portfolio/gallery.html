@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="portfolio.css" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="container_top">
+            <img id="pixelHeart" src="./images/pixelHeart.png" />
+            <br style="clear:both" />
+            <span id="display-time">
+                <script>
+                    function getTime() {
+                        var currentTime = new Date();
+                        hour = currentTime.getHours();
+                        min = currentTime.getMinutes();
+                        sec = currentTime.getSeconds();
+                        time = "TIME " + hour + " " + min + " " + sec;
+                        document.querySelector('#display-time').textContent = time;
+                    }
+                    setInterval(getTime, 1000);
+                </script>
+            </span>
+        </div>
+
+        <h1 id="name">Madeleine Moeller</h1>
+
+        <div class="nav">
+
+            <ul>
+                <li><a href="./index.html"><span id="selector">> </span><span
+                            id="selContent">About</span></a></li>
+                <li><a href="./projects.html"><span id="selector">> </span><span id="selContent">Projects</span></a>
+                </li>
+                <li><a href="./resume.html"><span id="selector">> </span><span id="selContent">Resume</span></a></li>
+                <li><a href="./gallery.html" id="currentPage"><span id="selector">> </span><span id="selContent">Gallery</span></a></li>
+                <li><a href="./contact.html"><span id="selector">> </span><span id="selContent">Contact</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="wrapper">
+        <div id="content">
+            <div id="gallery">
+                <div class="col1">
+                    <img src="./images/loki1.jpg" />
+                    <img src="./images/willowRiver.jpg" />
+                    <img src="./images/gizmo.jpg" />
+                    <img src="./images/gideon.jpg" />
+                </div>
+                <div class="col2">
+                    <img src="./images/USTrome.jpg" />
+                    <img src="./images/lokiwindow.jpg" />
+                    <img src="./images/gizmohat.jpg" />
+                    <img src="./images/harry.jpg" />
+
+                </div>
+                <div class="col3">
+                    <img src="./images/florence.jpg" />
+                    <img src="./images/florenceday.jpg" />
+                    <img src="./images/pantheon.jpg" />
+                    <img src="./images/pantheonInside.jpg" />
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <footer>Moeller 2024</footer>
+    </div>
+
+</body>
+
+</html>

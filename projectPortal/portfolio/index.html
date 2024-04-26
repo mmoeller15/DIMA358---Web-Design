@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Moeller Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css" />
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container_top">
+            <img id="pixelHeart" src="./images/pixelHeart.png" />
+            <br style="clear:both" />
+            <span id="display-time">
+                <script>
+                    function getTime() {
+                        var currentTime = new Date();
+                        hour = currentTime.getHours();
+                        min = currentTime.getMinutes();
+                        sec = currentTime.getSeconds();
+                        time = "TIME " + hour + " " + min + " " + sec;
+                        document.querySelector('#display-time').textContent = time;
+                    }
+                    setInterval(getTime, 1000);
+                </script>
+            </span>
+        </div>
+
+        <h1 id="name">Madeleine Moeller</h1>
+
+        <div class="nav">
+
+            <ul>
+                <li><a href="./index.html" id="currentPage"><span id="selector">> </span><span
+                            id="selContent">About</span></a></li>
+                <li><a href="./projects.html"><span id="selector">> </span><span id="selContent">Projects</span></a>
+                </li>
+                <li><a href="./resume.html"><span id="selector">> </span><span id="selContent">Resume</span></a></li>
+                <li><a href="./gallery.html"><span id="selector">> </span><span id="selContent">Gallery</span></a></li>
+                <li><a href="./contact.html"><span id="selector">> </span><span id="selContent">Contact</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="wrapper">
+
+        <div id="content">
+            <h2>About</h2>
+
+            <img id="indexImg" src="./images/me.jpg" />
+
+            <p>Hey! I'm Madeleine Moeller. I am a senior at the University of St. Thomas majoring in computer science
+                and minoring in mathematics.</p>
+
+            <p>I spent too much time on this website...don't underestimate the time it takes to resize a single photo...
+            </p>
+
+
+        </div>
+        <div style="clear:both"></div>
+    </div>
+
+    <div id="footer">
+        <footer>Moeller 2024</footer>
+    </div>
+</body>
+
+
+</html>

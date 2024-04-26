@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    display: block;
+}
+
+
+body {
+    background-color: #ece6df;
+    margin: 0 auto;
+}
+
+/* @font-face {
+    font-family: MonicaGarden;
+    src: url("./fonts/MonicaGarden-G3OGD.ttf");
+} */
+
+img {
+    width: 50%;
+    border-radius: 5px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    max-width: 38rem;
+    float: right;
+    margin: 2.5rem 0 2rem 1.5rem;
+}
+
+@font-face {
+    font-family: bright;
+    src: url("./fonts/Bright\ DEMO.otf");
+}
+
+
+
+
+h1 {
+    font-family: bright;
+    font-size: 8rem;
+    font-weight: normal;
+    color: #2d2920;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 2.5rem;
+}
+
+p {
+    max-width: 35rem;
+    font-family: belgiano;
+    font-size: 1.1rem;
+}
+
+#header {
+    background-color: #665f4f;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#content {
+    padding-top: 2.5rem;
+    margin: 0 auto;
+    width: 80%;
+}
+
+#nav {
+    text-align:center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    a {
+        display: block;
+    }
+}
+
+#nav li {
+    display: inline-block;
+    margin: 0;
+
+    a {
+        text-decoration: none;
+        color: black;
+        padding: .8rem;
+        background-color: #3e482a;
+        color: #665f4f;
+        font-family: bright;
+        font-size: 2em;
+        font-weight: normal;
+        border-radius: 1rem;
+    }
+
+    a:hover {
+        color: #ece6df;
+        background-color: #69573b;
+    }
+}
+
+#nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+/* ul inside li is hidden */
+#nav li ul {
+    display: none;
+    position: absolute;
+    padding: 0;
+    margin: .7em 0 0 0;
+
+    a {
+        display: block;
+        text-decoration: none;
+    }
+}
+
+#nav ul li a {
+    white-space: nowrap;
+}
+
+#nav li:hover>ul {
+    display: block;
+    position: absolute;
+}
+
+#nav li ul li {
+    display: block;
+    margin: 0;
+}

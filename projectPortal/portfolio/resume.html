@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Resume</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <script src="https://kit.fontawesome.com/1cb83f2b6e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container_top">
+            <img id="pixelHeart" src="./images/pixelHeart.png" />
+            <br style="clear:both" />
+            <span id="display-time">
+                <script>
+                    function getTime() {
+                        var currentTime = new Date();
+                        hour = currentTime.getHours();
+                        min = currentTime.getMinutes();
+                        sec = currentTime.getSeconds();
+                        time = "TIME " + hour + " " + min + " " + sec;
+                        document.querySelector('#display-time').textContent = time;
+                    }
+                    setInterval(getTime, 1000);
+                </script>
+            </span>
+        </div>
+
+        <h1 id="name">Madeleine Moeller</h1>
+
+        <div class="nav">
+
+            <ul>
+                <li><a href="./index.html"><span id="selector">> </span><span id="selContent">About</span></a></li>
+                <li><a href="./projects.html"><span id="selector">> </span><span id="selContent">Projects</span></a>
+                </li>
+                <li><a href="./resume.html" id="currentPage"><span id="selector">> </span><span
+                            id="selContent">Resume</span></a></li>
+                <li><a href="./gallery.html"><span id="selector">> </span><span id="selContent">Gallery</span></a></li>
+                <li><a href="./contact.html"><span id="selector">> </span><span id="selContent">Contact</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="wrapper">
+        <div id="resumeContent">
+            <div id="personal">
+                <img src="./images/profile.jpg" />
+                <h3>Madeleine Moeller</h3>
+                <div id="topLinks">
+                    <div id="linkedin">
+
+                        <a href="https://www.linkedin.com/in/moeller-madeleine/" target="_blank"><i
+                                class="fa-brands fa-linkedin fa-2xl"></i></a>
+                    </div>
+
+                    <div id="github">
+
+                        <a href="https://github.com/mmoeller15" target="_blank"><i
+                                class="fa-brands fa-github fa-2xl"></i></i></a>
+                    </div>
+                </div>
+                <div id="email">
+
+                    <a href="mailto: maddiemoeller15@gmail.com"><i
+                            class="fa-solid fa-envelope"></i>maddiemoeller15@gmail.com</a>
+                </div>
+
+
+
+                <div id="phone">
+
+                    <a href="tel:9525674309"><i class="fa-solid fa-phone"></i></i>+1 (952)-567-4309</a>
+                </div>
+
+                <div id="location">
+
+                    <a href="https://www.google.com/maps/place/St+Paul,+MN/@44.939589,-93.2708609,11z/"
+                        target="_blank"><i class="fa-solid fa-location-dot"></i></i>St. Paul, Minnesota</a>
+                </div>
+
+            </div>
+
+            <div id="skills">
+                <h3>Skills</h3>
+                <table id="skillsTable">
+                    <tr>
+                        <td>Java</td>
+                        <td>C/C++</td>
+                        <td>Python</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Babylon.js</td>
+                        <td>Vue.js</td>
+                    </tr>
+                    <tr>
+                        <td>SQL</td>
+                        <td>HTML/CSS</td>
+                        <td>LaTeX</td>
+                    </tr>
+                    <tr>
+                        <td>Verilog</td>
+                        <td>Assembly</td>
+                        <td>Embedded</td>
+                    </tr>
+                    <tr>
+                        <td>Linux</td>
+                        <td>Source Control</td>
+                        <td>MatLAB</td>
+                    </tr>
+                    <tr>
+                        <td>AWS</td>
+                        <td>VS Code</td>
+                        <td>JetBrains</td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div id="education">
+                <h3>Education</h3>
+                <ul>
+                    <li id="no-bullet">
+
+                        <h4>University of St. Thomas</h4>
+                        <h5>B.S. Computer Science</h5>
+
+
+                        <ul>
+                            <li>Graduation: May 2024</li>
+                            <li>Current GPA: 3.8</li>
+                            <li>Mathematics Minor</li>
+                            <li>Dean’s List (seven semesters)</li>
+                            <li>Study Abroad: J-term 2022 Roman Structures & Engineering</li>
+                            <li>Relevant Courses: Object Oriented Design, Data Structures, Web Development, Computer
+                                Architecture, Information Security, Computer Graphics, Algorithms, Database Design
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="experience">
+                <h3>Experience</h3>
+
+                <ul>
+                    <li id="no-bullet">
+                        <h4>Web Development Assistant</h4>
+                        <h5>December 2023 - present</h5>
+                        <ul>
+                            <li>Wrote unit tests using Postman for the University of St. Thomas’ primary event tracker
+                            </li>
+                            <li>Developing a revitalized platform for students and professors to access degree progress,
+                                tuition,
+                                registration, and more</li>
+                            <li>Quickly acquired job-related skills through self-directed study to build upon personal
+                                knowledge to
+                                strengthen team contributions</li>
+                        </ul>
+                    </li>
+
+
+                    <li id="no-bullet">
+                        <h4>2023 IEEE SciVis Contest</h4>
+                        <h5>January 2023 - October 2023</h5>
+                        <ul>
+                            <li>Developed VisAnywhere, a multiplatform scientific visualization application for
+                                analyzing
+                                data from brain
+                                plasticity simulations, with researchers from University of St. Thomas, Argonne National
+                                Laboratory,
+                                and University of Illinois Chicago
+                            </li>
+                            <li>Utilized graphing libraries in JavaScript to create 2D visualization for additional
+                                viewings
+                                of the data</li>
+                            <li>Project was awarded with overall Contest Winner and and the categorical award for Best
+                                Workflow and
+                                published a paper in the IEEE CG&A journal
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+                    <li id="no-bullet">
+                        <h4>UST Undergraduate Research Program</h4>
+                        <h5>June 2022 - August 2022</h5>
+                        <ul>
+                            <li>Conducted research for the development of a compact, wearable system using machine
+                                learning
+                                and
+                                electroencephalogram data to detect drowsiness in drivers.
+                            </li>
+                            <li>Presented findings at the University of St. Thomas Inquiry Poster Session
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+                    <li id="no-bullet">
+                        <h4>UST Undergraduate Research Program</h4>
+                        <h5>September 2021 - December 2021</h5>
+                        <ul>
+                            <li>Collaborated with a professor to research a wearable system using machine learning to
+                                detect
+                                the
+                                position of a user’s spine and provide feedback to correct posture
+                            </li>
+                            <li>Published findings in IEEE paper</li>
+                        </ul>
+                    </li>
+
+
+                    <li id="no-bullet">
+                        <h4>UST Campus Bookstore</h4>
+                        <h5>September 2020 - present</h5>
+                        <ul>
+                            <li>Sorting and selling stock, filling orders, answering phone calls, assisting customers
+                                with
+                                any questions
+                                or problems</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+
+
+
+
+
+        </div>
+        <div style="clear:both"></div>
+    </div>
+
+    <div id="footer">
+        <footer>Moeller 2024</footer>
+    </div>
+</body>
+
+</html>
