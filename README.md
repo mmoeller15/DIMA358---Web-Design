@@ -1,3 +1,9 @@
-# [DIMA 358 Web Design Portfolio](https://moel6746.dima358.com/)
+# DIMA 358 Web Design Portfolio
 
-https://moel6746.dima358.com/
+For DIMA 358 Web Design every assignment was uploaded to a personal portfolio. Acccessible here: https://moel6746.dima358.com
+
+A series of four short exercises are included.
+
+The midterm, [Portfolio](https://moel6746.dima358.com/portfolio), is a personal website complete with a resume and projects. It was created to resemble 8-bit video games and/or a terminal. 
+
+The [final project](https://moel6746.dima358.com/final), focused on sustainability with my topic being Community Gardens. 
